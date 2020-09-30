@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:11.2-alpine
+    shm_size: 256M
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
